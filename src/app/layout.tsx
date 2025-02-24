@@ -30,7 +30,7 @@ export default function RootLayout({
       >
         {/* <header>this is on all pages</header> */}
         <Header />
-        <main> {children}</main>
+        <main className="my-12">{children}</main>
         <footer>this is on all pages</footer>
       </body>
     </html>

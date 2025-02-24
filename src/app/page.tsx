@@ -9,27 +9,38 @@ export default function Home() {
     <article>
       {/* info about me */}
       <section>
-        <div>
-          <h1>Hi sam here</h1>
-          <h2>Full Stack Web Developer</h2>
-          <div>Melbourne, Australia</div>
+        <div className="space-y-4">
+          <h1 className="text-3xl font-bold">Hi sam here</h1>
+          <h2 className="text-xl text-gray-400">Full Stack Web Developer</h2>
+          <span>Melbourne, Australia</span>
           <p>
             I'm a {new Date().getFullYear() - BIRTH_YEAR} year old former civil
             engineer who self taught software development because I enjoy
-            looking at code more than I do looking at rocks.
+            looking at a screen more than I do looking at rocks.
           </p>
-
-          <div>
-            <div>resume</div>
-            <div>Links github linkedin email</div>
-          </div>
-
-          <span>image of me</span>
         </div>
+
+        {/* resume and links */}
+        <div>
+          <div>resume icon</div>
+          <div>Links github linkedin email</div>
+        </div>
+
+        <Image
+          src="/dp.png"
+          alt="photo of sam"
+          className="rounded-md"
+          width={150}
+          height={150}
+          priority
+        />
       </section>
 
       <section>
         <h2>Current technologies</h2>
+        <p>
+          Typescript, react, tailwind, nodeJs, mongoDb, nextJs, ExpressJs, Git{" "}
+        </p>
       </section>
 
       <Greet />
