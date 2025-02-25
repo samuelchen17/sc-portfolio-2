@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { Greet } from "./components/greet";
-import { Counter } from "./components/counter";
 
 const BIRTH_YEAR = 1998;
 
@@ -42,9 +40,6 @@ export default function Home() {
           Typescript, react, tailwind, nodeJs, mongoDb, nextJs, ExpressJs, Git{" "}
         </p>
       </section>
-
-      <Greet />
-      <Counter />
     </article>
   );
 }
